@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="vue.css">
+</head>
+<body>
+
+<nav>
+    <a href="#/">中文</a>
+    <a href="#/en-us/guide">English</a>
+</nav>
+<div id="app"></div>
+<script>
+    window.$docsify = {
+        // onlyCover: true,
+        coverpage: true,
+        loadSidebar: true,
+        subMaxLevel: 5,
+        mergeNavbar: true,
+        auto2top: true,
+        count: {
+            countable: true,
+            fontsize: '0.9em',
+            color: 'rgb(90,90,90)',
+            language: 'chinese'
+        },
+        search: {
+            paths: 'auto',
+            placeholder: '🔍 搜索',
+            noData: '😒 找不到结果',
+            depth: 6,
+            maxAge: 86400000
+        },
+        scrollTop: {
+            auto: true,
+            text: "🔼",
+            right: 12,
+            bottom: 52,
+            offset: 25
+        },
+        copyCode: {
+            buttonText: 'Copy',
+            errorText: 'Error',
+            successText: 'OK!'
+        },
+        footer: {
+            copy: '<span id="sitetime"></span> <br/> ' +
+                '<span id="busuanzi_container_site_pv" style=\'display:none\'>👀 本站总访问量：<span id="busuanzi_value_site_pv"></span> 次</span>' +
+                '<span id="busuanzi_container_site_uv" style=\'display:none\'>| 🚴‍♂️ 本站总访客数：<span id="busuanzi_value_site_uv"></span> 人</span> </br>' +
+                '<span>Copyright &copy; 2024 &nbsp 💖 &nbsp</span>',
+            auth: ' <strong><a href="https://github.com/veiframework/vei-cloud-starter-parent" target="_blank">Mr.ZhangHaoWei</a></strong>'
+            // pre: '<hr/>',
+            // style: 'font-size: 18px; text-align: center;',
+        },
+        docsifyPrism:{
+            init:function(){
+                //call once when init
+            },
+            beforeRender:function(code,lang){
+                //call every time before rendering code area
+                return code
+            },
+            afterRender:function(code){
+                //call every time before will complate
+                return code
+            }
+        },
+        name: 'vei-cloud-starter',
+        repo: 'https://github.com/veiframework/vei-cloud-starter-parent'
+    }
+</script>
+
+<script src="js/countword.js"></script>
+<!--<script src="//unpkg.com/docsify-count/dist/countable.js"></script>-->
+<script src="js/search.min.js"></script>
+<!--<script src="//gcore.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>-->
+<script src="js/zoomimage.js"></script>
+<!--<script src="//gore.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>-->
+<script src="js/copycode.js"></script>
+<!--<script src="//gcore.jsdelivr.net/npm/docsify-copy-code"></script>-->
+<script src="js/scroll2top.js"></script>
+<!--<script src="//unpkg.com/docsify-scroll-to-top/dist/docsify-scroll-to-top.min.js"></script>-->
+<script src="js/footer.js"></script>
+<!--<script src="//unpkg.com/docsify-footer-enh/dist/docsify-footer-enh.min.js"></script>-->
+
+<script src="js/emoji.js"></script>
+<!--<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script>-->
+<script async src="js/accesscount.js"></script>
+<!--<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>-->
+
+<!--<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>-->
+
+<script src="js/docsify-prism.js"></script>
+<!--<script src="//gcore.jsdelivr.net/npm/docsify-prism@latest/dist/docsify-prism.min.js"></script>-->
+
+<!--<script src="js/prism-java.js"></script>-->
+
+
+
+<!--<script src="//gcore.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>-->
+<!--<script src="//gcore.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>-->
+<!--<script src="//gcore.jsdelivr.net/npm/prismjs/components/prism-python.min.js"></script>-->
+<!--<script src="//gcore.jsdelivr.net/npm/prismjs/components/prism-cpp.min.js"></script>-->
+<!--<script src="//gcore.jsdelivr.net/npm/prismjs/components/prism-c.min.js"></script>-->
+<!--<script src="//gcore.jsdelivr.net/npm/prismjs/components/prism-javascript.min.js"></script>-->
+<!--<script src="//gcore.jsdelivr.net/npm/prismjs/components/prism-css.min.js"></script>-->
+<!--<script src="//gcore.jsdelivr.net/npm/prismjs/components/prism-powershell.min.js"></script>-->
+<!--<script src="//gcore.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>-->
+<!--<script src="//gcore.jsdelivr.net/npm/prismjs/components/prism-yaml.min.js"></script>-->
+<!--<script src="//gcore.jsdelivr.net/npm/prismjs/components/prism-properties.min.js"></script>-->
+<!--<script src="//gcore.jsdelivr.net/npm/prismjs/components/matlab.min.js"></script>-->
+
+
+
+
+<!-- 添加网站运行时间统计 -->
+<script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+        navigator.serviceWorker.register('sw.js')
+    }
+</script>
+<!-- Docsify v4 -->
+<script src="docsifyV4.js"></script>
+
+</body>
+</html>
