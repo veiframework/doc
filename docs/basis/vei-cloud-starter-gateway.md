@@ -1,11 +1,11 @@
-# vei-cloud-starter-web
+# vei-cloud-starter-gateway
 ## 引入依赖
 
-    
+
     <dependency>
         <groupId>io.github.veiframework</groupId>
-        <artifactId>vei-cloud-starter-web</artifactId>
+        <artifactId>vei-cloud-starter-gateway</artifactId>
     </dependency>
-    
+
 
 ## 特性

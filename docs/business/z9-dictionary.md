@@ -1,11 +1,9 @@
-# vei-cloud-starter-web
+# z9-dictionary
 ## 引入依赖
 
-    
     <dependency>
         <groupId>io.github.veiframework</groupId>
-        <artifactId>vei-cloud-starter-web</artifactId>
+        <artifactId>z9-dictionary</artifactId>
     </dependency>
-    
 
 ## 特性

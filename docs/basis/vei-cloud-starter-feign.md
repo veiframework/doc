@@ -1,11 +1,10 @@
-# vei-cloud-starter-web
+# vei-cloud-starter-feign
 ## 引入依赖
 
-    
+        
     <dependency>
         <groupId>io.github.veiframework</groupId>
-        <artifactId>vei-cloud-starter-web</artifactId>
+        <artifactId>vei-cloud-starter-feign</artifactId>
     </dependency>
-    
 
 ## 特性
